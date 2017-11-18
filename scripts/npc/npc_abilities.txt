@@ -31170,7 +31170,7 @@
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastPoint"				"0.4"
-		"AbilityCastRange"				"1200"
+		"AbilityCastRange"				"1200 1300 1400 1500"
 
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
@@ -31187,23 +31187,23 @@
 			"01"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"stun_duration"				"3 4 5 6"
+				"stun_duration"				"0.6 1.0 1.4 1.8"
 			}
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"strike_crit_mult"			"10000 20000 30000 40000"
+				"strike_crit_mult"			"180 240 300 360"
 				"LinkedSpecialBonus"		"special_bonus_unique_monkey_king"
 			}
 			"03"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"strike_radius"				"1000"
+				"strike_radius"				"175"
 			}
 			"04"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"strike_cast_range"			"1200"
+				"strike_cast_range"			"1200 1300 1400 1500"
 			}
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
