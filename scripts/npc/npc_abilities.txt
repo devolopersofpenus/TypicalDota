@@ -31198,7 +31198,7 @@
 			"03"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"strike_radius"				"150"
+				"strike_radius"				"1000"
 			}
 			"04"
 			{
