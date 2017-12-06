@@ -164,7 +164,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"ID"					"5003"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"		
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"		
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 		"AbilitySound"					"Hero_Antimage.ManaBreak"
 
@@ -275,7 +275,7 @@
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
-		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"		
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"		
 		"FightRecapLevel"				"2"
 		"AbilitySound"					"Hero_Antimage.ManaVoid"
 
@@ -5743,7 +5743,7 @@
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"3.5"
-		"AbilityDuration"				"12.0 12.0 12.0 12.0"
+		"AbilityDuration"				"6.0 12.0 18.0 24.0"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
@@ -5885,7 +5885,7 @@
 			"02"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"overload_move_slow"			"-10"
+				"overload_move_slow"			"-100"
 			}
 			
 			"03"
@@ -5946,7 +5946,7 @@
 			"03"
 			{
 				"var_type"							"FIELD_INTEGER"
-				"ball_lightning_move_speed"			"1250 1875 2500"		
+				"ball_lightning_move_speed"			"1300 2175 3050"		
 			}
 			"04"
 			{
@@ -10805,7 +10805,7 @@
 		}
 	}
 
-	//=================================================================================================================
+	//=================================================================================================================Complite
 	// Venomancer: Venomous Gale
 	//=================================================================================================================
 	"venomancer_venomous_gale"
@@ -10845,12 +10845,12 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"strike_damage"			"25 50 75 100"
+				"strike_damage"			"25 75 100 175"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"tick_damage"			"10 40 70 100"
+				"tick_damage"			"20 40 80 160"
 			}
 			"04"
 			{
@@ -10876,7 +10876,7 @@
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
 	}
 
-	//=================================================================================================================
+	//=================================================================================================================Complite
 	// Venomancer: Poison Sting
 	//=================================================================================================================
 	"venomancer_poison_sting"
@@ -10897,24 +10897,24 @@
 			"01"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"duration"				"6.0 9.0 12.0 15.0"
+				"duration"				"5.0 10.0 15.0 20.0"
 			}
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage"					"6 14 22 30"
+				"damage"					"8 16 24 32"
 			}
 			"03"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"movement_speed"			"-11 -12 -13 -14"
+				"movement_speed"			"-12 -14 -16 -18"
 				"LinkedSpecialBonus"		"special_bonus_unique_venomancer_2"
 			}			
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
 	}
 
-	//=================================================================================================================
+	//=================================================================================================================Complite
 	// Venomancer: Plague Ward
 	//=================================================================================================================
 	"venomancer_plague_ward"
@@ -10934,7 +10934,7 @@
 
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"5.0"
+		"AbilityCooldown"				"5.0 3.5 2.0 0.5"
 		
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
@@ -10947,7 +10947,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"duration"				"40.0"
+				"duration"				"30.0"
 			}
 			"02"
 			{
@@ -10962,7 +10962,7 @@
 			"04" // For special bonus at level 25
 			{
 				"var_type"				"FIELD_INTEGER"
-				"ward_hp"		"150 400 650 900"
+				"ward_hp"		"300 600 900 1200"
 			}
 			"05" // For special bonus at level 25
 			{
@@ -10973,7 +10973,7 @@
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
 	}
 	
-	//=================================================================================================================
+	//=================================================================================================================Complite
 	// Venomancer: Poison Nova
 	//=================================================================================================================
 	"venomancer_poison_nova"
@@ -11015,7 +11015,7 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"radius"					"830"
+				"radius"					"1230"
 				"LinkedSpecialBonus"		"special_bonus_unique_venomancer_6"
 			}
 			"02"
@@ -11026,13 +11026,13 @@
 			"03"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"duration"					"16"
+				"duration"					"20"
 				"LinkedSpecialBonus"		"special_bonus_unique_venomancer_4"
 			}
 			"04"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage"					"30 55 80"
+				"damage"					"30 60 90"
 			}
 			"05"
 			{
@@ -11042,17 +11042,17 @@
 			"06"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"duration_scepter"			"16"
+				"duration_scepter"			"25"
 			}
 			"07"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage_scepter"			"60 85 110"
+				"damage_scepter"			"60 90 120"
 			}
 			"08"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"speed"						"500"
+				"speed"						"555"
 			}
 		}
 	}
@@ -18244,11 +18244,11 @@
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"10.0 10.0 10.0 10.0"
-		"AbilityDuration"				"15.0 15.0 15.0 15.0"
+		"AbilityDuration"				"15.0 20.0 25.0 30.0"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"45 55 65 75"
+		"AbilityManaCost"				"60 50 30 0"
 		
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -18257,17 +18257,17 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"max_attacks"				"3 4 5 6"
+				"max_attacks"				"2 4 6 8"
 			}
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"attack_speed_bonus_pct"	"400 400 400 400"
+				"attack_speed_bonus_pct"	"100 200 400 800"
 			}
 			"03"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"duration_tooltip"			"15"
+				"duration_tooltip"			"15 20 25 30"
 			}
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
@@ -18293,18 +18293,18 @@
 			"01"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"bonus_reset_time"				"20"
+				"bonus_reset_time"				"10 15 20 25"
 				"LinkedSpecialBonus"			"special_bonus_unique_ursa_4"
 			}
 			"02"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"bonus_reset_time_roshan"		"6"
+				"bonus_reset_time_roshan"		"3 6 9 12"
 			}
 			"03"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"damage_per_stack"				"15 20 25 30"
+				"damage_per_stack"				"10 20 30 40"
 				"LinkedSpecialBonus"			"special_bonus_unique_ursa"
 			}
 		}
@@ -18348,12 +18348,12 @@
 			"01"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"enrage_multiplier"			"1.5 1.75 2.0"
+				"enrage_multiplier"			"1.5 2.0 2.75"
 			}
 			"02"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"damage_reduction"			"80"
+				"damage_reduction"			"100"
 			}
 			"03"
 			{
@@ -18413,7 +18413,7 @@
 			"03"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"rocket_damage"				"7 12 17 22"
+				"rocket_damage"				"7 14 22 31"
 				"LinkedSpecialBonus"		"special_bonus_unique_gyrocopter_3"
 			}
 		}
@@ -18438,12 +18438,12 @@
 
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"1050"
+		"AbilityCastRange"				"30000"
 		"AbilityCastPoint"				"0"
 
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"20 17 14 11"
+		"AbilityCooldown"				"19 16 13 10"
 		
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
@@ -18451,7 +18451,7 @@
 
 		// Damage.
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityDamage"					"100 175 250 325"
+		"AbilityDamage"					"100 200 400 800"
 		
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -18460,12 +18460,12 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"hits_to_kill_tooltip"		"3 3 4 4"
+				"hits_to_kill_tooltip"		"20 40 80 160"
 			}
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"tower_hits_to_kill_tooltip"		"6 6 8 10"
+				"tower_hits_to_kill_tooltip"		"60 120 240 420"
 			}
 			"03"
 			{
@@ -18490,7 +18490,7 @@
 			"07"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"pre_flight_time"			"3"
+				"pre_flight_time"			"10 9 8 7"
 			}
 			"08"
 			{
@@ -18500,12 +18500,12 @@
 			"09"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"speed"						"500"
+				"speed"						"200"
 			}
 			"10"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"acceleration"				"20"
+				"acceleration"				"5"
 			}
 			"11"
 			{
@@ -18515,7 +18515,7 @@
 			"12"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"charge_restore_time"	"20 17 14 11"
+				"charge_restore_time"	"19 16 13 10"
 			}
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
@@ -18540,11 +18540,11 @@
 
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"30 30 30 30"
+		"AbilityCooldown"				"30 25 20 15"
 		
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"50 50 50 50"
+		"AbilityManaCost"				"60 50 40 30"
 
 		//Duration
 		//-------------------------------------------------------------------------------------------------------------
@@ -18562,7 +18562,7 @@
 			"02"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"max_attacks"					"3 4 5 6"
+				"max_attacks"					"2 4 6 8"
 				"LinkedSpecialBonus"			"special_bonus_unique_gyrocopter_2"
 			}
 			"03"
@@ -18573,12 +18573,12 @@
 			"04"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"fire_rate"						"1.1"
+				"fire_rate"						"0.7"
 			}
 			"05"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"scepter_radius"				"600"
+				"scepter_radius"				"800"
 			}
 		}
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
@@ -18628,12 +18628,12 @@
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"slow_duration_second"		"4"
+				"slow_duration_second"		"2 4 6"
 			}
 			"03"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage_first"				"200 275 350"
+				"damage_first"				"200 300 400"
 			}
 			"04"
 			{
@@ -18643,17 +18643,17 @@
 			"05"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"slow_first"				"30"
+				"slow_first"				"35"
 			}
 			"06"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"slow_second"				"60"
+				"slow_second"				"100"
 			}
 			"07"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"radius"					"600"
+				"radius"					"635"
 			}			
 			"08"
 			{
@@ -18663,7 +18663,7 @@
 			"09"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage_second_scepter"		"175 225 275"
+				"damage_second_scepter"		"200 300 400"
 			}
 		}
 	}
@@ -21711,7 +21711,7 @@
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
 	}
 
-	//=================================================================================================================
+	//=================================================================================================================Complite
 	// Shadow Demon: Shadow Demon Soul Catcher
 	//=================================================================================================================
 	"shadow_demon_soul_catcher"
@@ -21783,7 +21783,7 @@
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
 	}
 
-	//=================================================================================================================
+	//=================================================================================================================Complite
 	// Shadow Demon: Shadow Demon Shadow Poison
 	//=================================================================================================================
 	"shadow_demon_shadow_poison"
@@ -21878,7 +21878,7 @@
 		"AbilityCooldown"				"1.0"
 	}
 
-	//=================================================================================================================
+	//=================================================================================================================Complite
 	// Shadow Demon: Shadow Demon Demonic Purge
 	//=================================================================================================================
 	"shadow_demon_demonic_purge"
@@ -21957,7 +21957,7 @@
 		}
 	}
 
-	//=================================================================================================================
+	//=================================================================================================================Complite
 	// Chaos Knight: Chaos Bolt
 	//=================================================================================================================
 	"chaos_knight_chaos_bolt"
@@ -22021,7 +22021,7 @@
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
 	}
 
-	//=================================================================================================================
+	//=================================================================================================================Complite
 	// Chaos Knight: Reality Rift
 	//=================================================================================================================
 	"chaos_knight_reality_rift"
@@ -22075,7 +22075,7 @@
 		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
 	}
 
-	//=================================================================================================================
+	//=================================================================================================================Complite
 	// Chaos Knight: Chaos Strike
 	//=================================================================================================================
 	"chaos_knight_chaos_strike"
@@ -22111,7 +22111,7 @@
 	}
 
 
-	//=================================================================================================================
+	//=================================================================================================================Complite
 	// Chaos Knight: Phantasm
 	//=================================================================================================================
 	"chaos_knight_phantasm"
@@ -22535,13 +22535,13 @@
 			"01"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"damage_count"		"4 5 6 7"
+				"damage_count"		"4 6 8 10"
 				"LinkedSpecialBonus"	"special_bonus_unique_treant"
 			}
 			"02"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"health_regen"		"4 7 10 13"
+				"health_regen"		"5 8.5 11.5 15"
 			}
 			"03"
 			{
