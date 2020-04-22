@@ -188,7 +188,7 @@
 			"01"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"percent_damage_per_burn"		"50"
+				"percent_damage_per_burn"		"40"
 			}
 			"02"
 			{
