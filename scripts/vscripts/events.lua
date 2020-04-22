@@ -454,6 +454,7 @@ function TypicalDota:OnEntityKilled(keys)
 		-- Hero Respawn time configuration
 		if ENABLE_HERO_RESPAWN then
 			local killed_unit_level = killed_unit:GetLevel()
+			print(killed_unit_level)
 
 			-- Respawn time without buyback penalty (+25 sec)
 			local respawn_time = 1
@@ -467,9 +468,9 @@ function TypicalDota:OnEntityKilled(keys)
 
 			-- Fixing respawn time after level 25
 			local respawn_time_after_25 = 100 + (killed_unit_level-25)*5
-			if killed_unit_level > 25 and respawn_time < respawn_time_after_25	then
-				respawn_time = respawn_time_after_25
-			end
+			--if killed_unit_level > 25 and respawn_time < respawn_time_after_25	then
+			--	respawn_time = respawn_time_after_25
+			--end
 
 			-- Bloodstone reduction (bloodstone can't be in backpack)
 			-- for i=DOTA_ITEM_SLOT_1, DOTA_ITEM_SLOT_6 do
@@ -498,6 +499,7 @@ function TypicalDota:OnEntityKilled(keys)
 			-- Killer is a neutral creep
 			if killer_unit:IsNeutralUnitType() then
 				-- If a hero is killed by a neutral creep, respawn time can be modified here
+				respawn_time = respawn_time*0.66
 			end
 
 			-- Maximum Respawn Time

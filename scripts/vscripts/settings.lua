@@ -56,7 +56,7 @@ END_GAME_ON_KILLS = false				-- Should the game end after a certain number of ki
 KILLS_TO_END_GAME_FOR_TEAM = 50			-- How many kills for a team should signify an end of game?
 
 USE_CUSTOM_XP_VALUES = false			-- Should we use custom XP values to level up heroes, or the default Dota numbers?
-MAX_LEVEL = 25							-- What level should we let heroes get to? (USE_CUSTOM_XP_VALUES must be true).
+MAX_LEVEL = 30							-- What level should we let heroes get to? (USE_CUSTOM_XP_VALUES must be true).
 -- NOTE: MAX_LEVEL and XP_PER_LEVEL_TABLE will not work if USE_CUSTOM_XP_VALUES is false or nil.
 
 -- Fill this table up with the required XP per level if you want to change it
@@ -112,9 +112,8 @@ CUSTOM_RESPAWN_TIME[24] = 29
 CUSTOM_RESPAWN_TIME[25] = 40
 
 if MAX_LEVEL > 25 then
-	CUSTOM_RESPAWN_TIME[25] = 30
 	for i=26, MAX_LEVEL do
-		CUSTOM_RESPAWN_TIME[i] = CUSTOM_RESPAWN_TIME[i] + 5
+		CUSTOM_RESPAWN_TIME[i] = CUSTOM_RESPAWN_TIME[i-1] + 5
 	end
 end
 
