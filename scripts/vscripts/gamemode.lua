@@ -157,6 +157,7 @@ function TypicalDota:InitGameMode()
 	GameRules:SetShowcaseTime(SHOWCASE_TIME)
 	GameRules:SetStrategyTime(STRATEGY_TIME)
 	GameRules:SetTreeRegrowTime(TREE_REGROW_TIME)
+	
 	if USE_CUSTOM_HERO_LEVELS then
 		GameRules:SetUseCustomHeroXPValues(true)
 	end
@@ -242,7 +243,7 @@ function TypicalDota:InitGameMode()
 	DebugPrint("[BAREBONES] Setting filters.")
 
 	local gamemode = GameRules:GetGameModeEntity()
-
+	
 	-- Setting the Order filter 
 	gamemode:SetExecuteOrderFilter(Dynamic_Wrap(TypicalDota, "OrderFilter"), self)
 
@@ -295,6 +296,7 @@ function TypicalDota:CaptureGameMode()
 	gamemode:SetRecommendedItemsDisabled(RECOMMENDED_BUILDS_DISABLED)
 	gamemode:SetBuybackEnabled(BUYBACK_ENABLED)
 	--gamemode:SetCameraDistanceOverride(CAMERA_DISTANCE_OVERRIDE)
+	gamemode:SetFreeCourierModeEnabled(true)
 	gamemode:SetCustomBuybackCostEnabled(CUSTOM_BUYBACK_COST_ENABLED)
 	gamemode:SetCustomBuybackCooldownEnabled(CUSTOM_BUYBACK_COOLDOWN_ENABLED)
 	gamemode:SetTopBarTeamValuesOverride(USE_CUSTOM_TOP_BAR_VALUES)

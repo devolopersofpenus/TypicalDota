@@ -29,7 +29,7 @@
 		"Ability1"		"kunkka_torrent"
 		"Ability2"		"kunkka_tidebringer"
 		"Ability3"		"kunkka_x_marks_the_spot"
-		"Ability4"		"generic_hidden"
+		"Ability4"		"kunkka_torrent_storm"
 		"Ability5"		"generic_hidden"
 		"Ability6"		"kunkka_ghostship"
 		"Ability7"		"kunkka_return"

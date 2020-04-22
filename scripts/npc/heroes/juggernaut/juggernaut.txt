@@ -30,7 +30,7 @@
 		"Ability1"		"juggernaut_blade_fury"
 		"Ability2"		"juggernaut_healing_ward"
 		"Ability3"		"juggernaut_blade_dance"
-		"Ability4"		"generic_hidden"
+		"Ability4"		"juggernaut_swift_slash"
 		"Ability5"		"generic_hidden"
 		"Ability6"		"juggernaut_omni_slash"
 		"Ability10"		"special_bonus_all_stats_5"
