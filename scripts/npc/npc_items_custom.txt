@@ -1,0 +1,49 @@
+#base "item.txt"
+
+"DOTAAbilities"
+{
+	"custom_item_fervor_yasha"
+	{
+		"ID"						"1300"
+		"BaseClass"                 "item_lua"
+		"AbilityTextureName"        "item_yasha"
+		"ScriptFile"				"item/custom_item_fervor_yasha.lua"
+		"ItemQuality"				"consumable"
+		"ItemAliases"				"fervor yasha"
+
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"ItemCost"					"100"
+		"ItemDroppable"				"1"
+		"ItemSellable"				"1"
+
+		"AbilitySpecial"
+		{
+		    "01"
+		    {
+		        "var_type"          "FIELD_INTEGER"
+		        "bonus_agility"             "900"
+		    }
+		    "02"
+		    {
+		        "var_type"          "FIELD_FLOAT"
+		        "duration_speed_bonus"          "3.0"
+		    }
+		    "03"
+		    {
+		        "var_type"          "FIELD_INTEGER"
+		        "speed_bonus"          "6"
+		    }
+		    "04"
+		    {
+		        "var_type"          "FIELD_INTEGER"
+		        "speed_attack_bonus"          "90"
+		    }
+		    "05"
+		    {
+		        "var_type"          "FIELD_INTEGER"
+		        "speed_bonus"          "30"
+		    }
+		}
+	}
+}

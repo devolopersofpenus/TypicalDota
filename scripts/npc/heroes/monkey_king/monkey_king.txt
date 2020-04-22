@@ -1,0 +1,151 @@
+"DOTAHeroes"
+{
+	"npc_dota_hero_monkey_king"
+	{
+		"Model"		"models/heroes/monkey_king/monkey_king.vmdl"
+		"Portrait"		"vgui/hud/heroportraits/portrait_riki"
+		"IdleExpression"		"scenes/monkey_king/monkey_king_exp_idle_01.vcd"
+		"SoundSet"		"Hero_MonkeyKing"
+		"PickSound"		"monkey_king_monkey_spawn_17"
+		"BanSound"		"monkey_king_monkey_anger_12"
+		"HeroSelectSoundEffect"		"Hero_MonkeyKing.Pick"
+		"GibType"		"default"
+		"Enabled"		"1"
+		"HeroUnlockOrder"		"2"
+		"Role"			"Carry,Escape,Disabler,Initiator"
+		"Rolelevels"	"2,2,1,1"
+		"Complexity"	"2"
+		"Team"		"Good"
+		"HeroID"		"114"
+		"NameAliases"		"mk"
+		"CMEnabled"		"1"
+		"new_player_enable"		"1"
+		"ModelScale"		"0.8100"
+		"LoadoutScale"		"0.8100"
+		"workshop_guide_name"		"Monkey King"
+		"AbilityDraftDisabled"	"1"
+		"Ability1"		"monkey_king_boundless_strike"
+		"Ability2"		"monkey_king_tree_dance"
+		"Ability3"		"monkey_king_primal_spring"
+		"Ability4"		"monkey_king_jingu_mastery"
+		"Ability5"		"monkey_king_mischief"
+		"Ability6"		"monkey_king_wukongs_command"
+		"Ability7"		"monkey_king_primal_spring_early"
+		"Ability8"		"monkey_king_untransform"
+		"Ability10"		"special_bonus_unique_monkey_king_5"
+		"Ability11"		"special_bonus_attack_speed_20"
+		"Ability12"		"special_bonus_unique_monkey_king_7"
+		"Ability13"		"special_bonus_unique_monkey_king_2"
+		"Ability14"		"special_bonus_unique_monkey_king"
+		"Ability15"		"special_bonus_unique_monkey_king_3"
+		"Ability16"		"special_bonus_unique_monkey_king_4"
+		"Ability17"		"special_bonus_unique_monkey_king_6"
+		"AbilityDraftIgnoreCount" "8"
+		"ArmorPhysical"		"-3"
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"		"29"
+		"AttackDamageMax"		"35"
+		"AttackRate"		"1.700000"
+		"AttackAnimationPoint"		"0.45"
+		"AttackSpeedActivityModifiers"
+		{
+			"fast"		"170"
+			"faster"	"275"
+			"fastest"	"350"
+		}
+		"AttackAcquisitionRange"		"600"
+		"AttackRange"		"300"
+		"AttackRangeActivityModifiers"
+		{
+			"attack_normal_range"	"0"
+			"attack_long_range"		"200"
+		}
+		"AttributePrimary"		"DOTA_ATTRIBUTE_AGILITY"
+		"AttributeBaseStrength"		"19"
+		"AttributeStrengthGain"		"1.7"
+		"AttributeBaseIntelligence"		"20"
+		"AttributeIntelligenceGain"		"1.8"
+		"AttributeBaseAgility"	"22"
+		"AttributeAgilityGain"	"3.200000"
+		"StatusHealthRegen"		"1.5"
+		"MovementSpeed"			"300"
+		"MovementTurnRate"		"0.600000"
+		"MovementSpeedActivityModifiers"
+		{
+			"walk"		"0"
+			"run"		"390"
+			"run_fast"	"440"
+		}
+		"HasAggressiveStance"	"0"
+		"BoundsHullName"		"DOTA_HULL_SIZE_SMALL"
+		"particle_folder"		"particles/units/heroes/hero_monkey_king"
+		"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_monkey_king.vsndevts"
+		"VoiceFile"		"soundevents/voscripts/game_sounds_vo_monkey_king.vsndevts"
+		// Items
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemSlots"
+		{
+			"0"
+			{
+				"SlotIndex"		"0"
+				"SlotName"		"weapon"
+				"SlotText"		"#LoadoutSlot_Weapon"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"		"1000"
+				"MaxPolygonsLOD1"		"750"
+			}
+			"1"
+			{
+				"SlotIndex"		"1"
+				"SlotName"		"head"
+				"SlotText"		"#LoadoutSlot_Head_Accessory"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"		"1000"
+				"MaxPolygonsLOD1"		"650"
+			}
+			"2"
+			{
+				"SlotIndex"		"2"
+				"SlotName"		"armor"
+				"SlotText"		"#LoadoutSlot_Armor"
+				"TextureWidth"		"512"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"		"2000"
+				"MaxPolygonsLOD1"		"1000"
+			}
+
+			"3"
+			{
+				"SlotIndex"		"3"
+				"SlotName"		"shoulder"
+				"SlotText"		"#LoadoutSlot_Shoulder"
+				"TextureWidth"		"512"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"		"1000"
+				"MaxPolygonsLOD1"		"600"
+			}
+			"4"
+			{
+				"SlotIndex"		"4"
+				"SlotName"		"taunt"
+				"SlotText"		"#LoadoutSlot_Taunt"
+			}
+		}
+		"Bot"
+		{
+			"HeroType"		"DOTA_BOT_SEMI_CARRY | DOTA_BOT_GANKER"
+			"LaningInfo"
+			{
+				"SoloDesire"		"0"
+				"RequiresBabysit"		"2"
+				"ProvidesBabysit"		"0"
+				"SurvivalRating"		"2"
+				"RequiresFarm"		"2"
+				"ProvidesSetup"		"0"
+				"RequiresSetup"		"1"
+			}
+		}
+	}
+}

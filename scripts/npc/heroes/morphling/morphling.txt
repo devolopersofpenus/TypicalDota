@@ -1,0 +1,166 @@
+"DOTAHeroes"
+{
+	"npc_dota_hero_morphling"
+	{
+		"Model"		"models/heroes/morphling/morphling.vmdl"
+		"Portrait"		"vgui/hud/heroportraits/portrait_morphling"
+		"SoundSet"		"Hero_Morphling"
+		"PickSound"		"morphling_mrph_spawn_01"
+		"BanSound"		"morphling_mrph_anger_07"
+		"IdleSoundLoop"		"Hero_Morphling.IdleLoop"
+		"Enabled"		"1"
+		"HeroUnlockOrder"		"3"
+		"Role"			"Carry,Escape,Durable,Nuker,Disabler"
+		"Rolelevels"	"3,3,2,1,1"
+		"Complexity"	"3"
+		"Team"		"Good"
+		"HeroID"		"10"
+		"ModelScale"		"0.880000"
+		"LoadoutScale"		"1"
+		"SpectatorLoadoutScale" "1"
+		"HeroGlowColor"		"33 255 255"
+		"CMEnabled"		"1"
+		"workshop_guide_name"		"Morphling"
+		"Legs"	"0"
+		"NoCombine"		"1"
+		"LastHitChallengeRival"		"npc_dota_hero_necrolyte"
+		"HeroSelectSoundEffect"		"Hero_Morphling.Pick"
+		"GibType"		"ethereal"
+		"GibTintColor"	"99 255 255 255"
+		"Ability1"		"morphling_waveform"
+		"Ability2"		"morphling_adaptive_strike_agi"
+		"Ability3"		"morphling_adaptive_strike_str"
+		"Ability4"		"morphling_morph_agi"
+		"Ability5"		"morphling_morph_str"
+		"Ability6"		"morphling_replicate"
+		"Ability7"		"morphling_morph_replicate"
+		"Ability8"		"morphling_morph"
+		"Ability15"		"special_bonus_agility_10"
+		"Ability16"		"special_bonus_unique_morphling_1"
+		"Ability17"		"special_bonus_unique_morphling_8"
+		"Ability18"		"special_bonus_attack_speed_30"
+		"Ability19"		"special_bonus_unique_morphling_5"
+		"Ability20"		"special_bonus_unique_morphling_4"
+		"Ability21"		"special_bonus_unique_morphling_6"
+		"Ability22"		"special_bonus_unique_morphling_3"
+		"AbilityTalentStart"		"15"
+		"AbilityDraftDisabled"		"1"
+		"AbilityDraftIgnoreCount"		"10"
+		"ArmorPhysical"		"-2"
+		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageMin"		"9"
+		"AttackDamageMax"		"18"
+		"AttackRate"		"1.5000"
+		"AttackAnimationPoint"		"0.500000"
+		"AttackAcquisitionRange"		"800"
+		"AttackRange"		"350"
+		"ProjectileModel"		"particles/units/heroes/hero_morphling/morphling_base_attack.vpcf"
+		"ProjectileSpeed"		"1300"
+		"AttributePrimary"		"DOTA_ATTRIBUTE_AGILITY"
+		"AttributeBaseStrength"		"30"
+		"AttributeStrengthGain"		"3.600000"
+		"AttributeBaseIntelligence"		"30"
+		"AttributeIntelligenceGain"		"3.600000"
+		"AttributeBaseAgility"		"30"
+		"AttributeAgilityGain"		"3.600000"
+		"MovementSpeed"		"280"
+		"MovementTurnRate"		"0.600000"
+		"particle_folder"		"particles/units/heroes/hero_morphling"
+		"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_morphling.vsndevts"
+		"VoiceFile"		"soundevents/voscripts/game_sounds_vo_morphling.vsndevts"
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"particles/units/heroes/hero_morphling/morphling_loadout.vpcf"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"		"attach_hitloc"
+					}
+				}
+			}
+		}
+		"ItemSlots"
+		{
+			"0"
+			{
+				"SlotIndex"		"0"
+				"SlotName"		"head"
+				"SlotText"		"#LoadoutSlot_Head_Accessory"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"		"1000"
+				"MaxPolygonsLOD1"		"500"
+			}
+			"1"
+			{
+				"SlotIndex"		"1"
+				"SlotName"		"shoulder"
+				"SlotText"		"#LoadoutSlot_Shoulder"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"		"400"
+				"MaxPolygonsLOD1"		"300"
+			}
+			"2"
+			{
+				"SlotIndex"		"2"
+				"SlotName"		"back"
+				"SlotText"		"#LoadoutSlot_Back"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"		"400"
+				"MaxPolygonsLOD1"		"300"
+			}
+			"3"
+			{
+				"SlotIndex"		"3"
+				"SlotName"		"arms"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"		"800"
+				"MaxPolygonsLOD1"		"600"
+				"SlotText"		"#LoadoutSlot_Arms"
+			}
+			"4"
+			{
+				"SlotIndex"		"4"
+				"SlotName"		"misc"
+				"SlotText"		"#LoadoutSlot_Misc"
+				"TextureWidth"		"256"
+				"TextureHeight"		"128"
+				"MaxPolygonsLOD0"		"450"
+				"MaxPolygonsLOD1"		"300"
+			}
+			"5"
+			{
+				"SlotIndex"		"5"
+				"SlotName"		"taunt"
+				"SlotText"		"#LoadoutSlot_Taunt"
+			}
+			"6"
+			{
+				"SlotIndex"		"6"
+				"SlotName"		"ambient_effects"
+				"SlotText"		"#LoadoutSlot_Ambient_Effects"
+				"DisplayInLoadout"		"0"
+			}
+		}
+		"Bot"
+		{
+			"HeroType"		"DOTA_BOT_HARD_CARRY"
+			"LaningInfo"
+			{
+				"SoloDesire"		"0"
+				"RequiresBabysit"		"1"
+				"ProvidesBabysit"		"1"
+				"SurvivalRating"		"2"
+				"RequiresFarm"		"2"
+				"ProvidesSetup"		"0"
+				"RequiresSetup"		"1"
+			}
+		}
+	}
+}

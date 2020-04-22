@@ -1,0 +1,227 @@
+"DOTAAbilities"
+{
+	"bounty_hunter_shuriken_toss"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"5285"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"FightRecapLevel"				"1"
+		"AbilitySound"					"Hero_BountyHunter.Shuriken"
+
+		// Unit Targeting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"400"
+		"AbilityCastPoint"				"0.3 0.3 0.3 0.3"
+		"AbilityCooldown"				"10"
+		"AbilityManaCost"				"150"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityModifierSupportValue"	"0.1"	// just a mini stun
+
+		"HasScepterUpgrade"				"1"
+			
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"200 285 375 470"
+				"LinkedSpecialBonus"	"special_bonus_unique_bounty_hunter_2"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"speed"					"1000 1000 1000 1000"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bounce_aoe"			"1500 3000 4500 6000"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"ministun"			"0.1"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"scepter_ministun"			"1.75"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+	}
+
+	
+	"bounty_hunter_jinada"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"5286"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"AbilitySound"					"Hero_BountyHunter.Jinada"
+
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"12 9 6 3"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"120 160 200 240"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"gold_steal"			"19 26 34 42"
+				"LinkedSpecialBonus"		"special_bonus_unique_bounty_hunter"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
+	}	
+
+	
+	"bounty_hunter_wind_walk"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"5287"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"AbilitySound"					"Hero_BountyHunter.WindWalk"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"15.0 15.0 15.0 15.0"
+		"AbilityCastPoint"				"0.0 0.0 0.0 0.0"
+		
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration"					"25.0 32.0 39.0 46.0"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"fade_time"					"1.0 0.75 0.5 0.25"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"slow"				"15 22 29 36"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"slow_duration"				"5"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
+	}
+
+	
+	"bounty_hunter_track"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"5288"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"AbilitySound"					"Hero_BountyHunter.Target"
+
+		// Unit Targeting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+		
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"1000"
+		"AbilityCastPoint"				"0.3 0.3 0.3"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
+
+		"AbilityCooldown"				"4"
+		"AbilityManaCost"				"65"
+			
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"target_crit_multiplier"	"140 160 180"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_gold_radius"		"30000"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_gold_self"		"150 250 350"
+				"LinkedSpecialBonus"	"special_bonus_unique_bounty_hunter_3"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_gold"			"80 120 160"
+				"LinkedSpecialBonus"	"special_bonus_unique_bounty_hunter_3"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"30.0 35.0 40.0"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"cast_range_tooltip"			"1000"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"gold_steal"			"0.3 0.4 0.5"
+			}			
+			"08"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_move_speed_pct"	"16 20 24"
+			}
+
+		}
+	}
+
+	
+}

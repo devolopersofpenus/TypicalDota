@@ -1,0 +1,6 @@
+#base "heroes/finnick/finnick.txt"
+
+"DOTAUnits"
+{
+	"Version" 	"1"
+}

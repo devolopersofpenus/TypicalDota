@@ -1,0 +1,263 @@
+"DOTAAbilities"
+{
+	"sandking_burrowstrike"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"					"5102"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+		"FightRecapLevel"				"1"
+		"HasScepterUpgrade"			"1"
+		"AbilitySound"					"Ability.SandKing_BurrowStrike"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"350 450 550 650"
+		"AbilityCastPoint"				"0.0 0.0 0.0 0.0"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"14 13 12 11"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"110 120 130 140"
+		
+		"AbilityDamage"					"100 185 270 350"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"burrow_width"		"150"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"burrow_duration"	"1.9 2.0 2.1 2.2"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"burrow_speed"		"2000"
+			}
+			"04"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"burrow_anim_time"	"0.52"
+			}
+			"05"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"tooltip_range"		"400 575 725 800"
+			}
+			"06"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"cast_range_scepter"		"800 1150 1450 1600"
+			}
+			"07"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"burrow_speed_scepter"		"3000"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+	}
+	
+	
+	"sandking_sand_storm"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"					"5103"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"FightRecapLevel"				"1"
+		"AbilitySound"					"Ability.SandKing_SandStorm.start"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"0"
+		"AbilityDuration"				"20 25 30 35"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"40 32 24 16"
+		"AbilityCastPoint"				"0.0 0.0 0.0 0.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"60"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"damage_tick_rate"	"0.5"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"sand_storm_radius"		"450 550 650 750"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"AbilityDuration"		"20 25 30 35"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"sand_storm_damage"		"30 60 90 120"
+				"LinkedSpecialBonus"	"special_bonus_unique_sand_king_2"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"fade_delay"			"1.0 0.85 0.7 0.55"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
+	}
+	
+	
+	"sandking_caustic_finale"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"					"5104"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"AbilitySound"					"Ability.SandKing_CausticFinale"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"caustic_finale_radius"		"450"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"caustic_finale_damage"		"130 175 235 310"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"caustic_finale_damage_expire"		"30 50 70 90"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"caustic_finale_duration"	"2 4 6 8"
+			}
+			"05"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"caustic_finale_slow"		"-15 -20 -25 -30"
+			}
+			"06"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"caustic_finale_slow_duration"		"4 8 12 16"
+			}		
+			"07"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"caustic_finale_expire_dmg_pct_tooltip"		"50"
+			}				
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
+	}
+
+	
+	"sandking_epicenter"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"					"5105"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"FightRecapLevel"				"2"
+		"AbilitySound"					"Ability.SandKing_Epicenter"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"120 110 100"
+		"AbilityDuration"				"3.0 3.0 3.0"
+		"AbilityChannelTime"			"2.0 2.0 2.0"
+		"AbilityCastPoint"				"0.0 0.0 0.0 0.0"
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_4"
+		"AbilityChannelAnimation"		"ACT_DOTA_CHANNEL_ABILITY_4"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"150 225 300"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityModifierSupportValue"	"0.2"	// Damage is the main component of spell
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"epicenter_radius"	"275 325 375 425 475 525 575 625 675 725 775 825 875 925"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"epicenter_pulses"	"7 10 14"
+				"LinkedSpecialBonus"	"special_bonus_unique_sand_king"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"epicenter_damage"	"110 120 130"
+			}
+			"04"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"epicenter_slow"	"-30 -30 -30"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"epicenter_slow_as"		"-30"
+				"LinkedSpecialBonus"	"special_bonus_unique_sand_king_3"
+			}
+			"06"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"epicenter_slow_duration_tooltip"	"3"
+			}			
+		}
+	}
+	
+	
+}

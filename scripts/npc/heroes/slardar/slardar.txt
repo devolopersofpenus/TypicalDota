@@ -1,0 +1,151 @@
+"DOTAHeroes"
+{
+	"npc_dota_hero_slardar"
+	{
+		"Model"		"models/heroes/slardar/slardar.vmdl"
+		"Portrait"		"vgui/hud/heroportraits/portrait_slardar"
+		"IdleExpression"		"scenes/default_idle.vcd"
+		"SoundSet"		"Hero_Slardar"
+		"HeroID"		"28"
+		"Enabled"		"1"
+		"HeroUnlockOrder"		"1"
+		"Role"			"Carry,Durable,Initiator,Disabler,Escape"
+		"Rolelevels"	"2,2,2,1,1"
+		"Complexity"	"1"
+		"Team"		"Bad"
+		"ModelScale"		"0.880000"
+		"SpectatorLoadoutScale" "0.94"
+		"HeroGlowColor"		"78 127 208"
+		"PickSound"		"slardar_slar_spawn_01"
+		"BanSound"		"slardar_slar_anger_04"
+		"CMEnabled"		"1"
+		"Legs"	"0"
+		"workshop_guide_name"		"Slardar"
+		"new_player_enable"		"1"
+		"LastHitChallengeRival"		"npc_dota_hero_tidehunter"
+		"HeroSelectSoundEffect"		"Hero_Slardar.Pick"
+		"GibType"		"default"
+		"Ability1"		"slardar_sprint"
+		"Ability2"		"slardar_slithereen_crush"
+		"Ability3"		"slardar_bash"
+		"Ability4"		"generic_hidden"
+		"Ability5"		"generic_hidden"
+		"Ability6"		"slardar_amplify_damage"
+		"Ability10"		"special_bonus_hp_regen_6"
+		"Ability11"		"special_bonus_attack_damage_25"
+		"Ability12"		"special_bonus_hp_300"
+		"Ability13"		"special_bonus_unique_slardar_2"
+		"Ability14"		"special_bonus_lifesteal_30"
+		"Ability15"		"special_bonus_night_vision_1000"
+		"Ability16"		"special_bonus_unique_slardar"
+		"Ability17"		"special_bonus_unique_slardar_3"
+		"ArmorPhysical"		"3"
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"		"30"
+		"AttackDamageMax"		"38"
+		"AttackRate"		"1.700000"
+		"AttackAnimationPoint"		"0.360000"
+		"AttackAcquisitionRange"		"600"
+		"AttackRange"		"150"
+		"ProjectileSpeed"		"0"
+		"MovementSpeed"		"285"
+		"MovementTurnRate"		"0.500000"
+		"AttributePrimary"		"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributeBaseStrength"		"21"
+		"AttributeStrengthGain"		"3.100000"
+		"AttributeBaseIntelligence"		"15"
+		"AttributeIntelligenceGain"		"1.500000"
+		"AttributeBaseAgility"		"17"
+		"AttributeAgilityGain"		"2.400000"
+		"BoundsHullName"		"DOTA_HULL_SIZE_HERO"
+		"VoiceFile"		"soundevents/voscripts/game_sounds_vo_slardar.vsndevts"
+		"particle_folder"		"particles/units/heroes/hero_slardar"
+		"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_slardar.vsndevts"
+		"Model"		"models/heroes/slardar/slardar.vmdl"
+		"ItemSlots"
+		{
+			"0"
+			{
+				"SlotIndex"		"0"
+				"SlotName"		"weapon"
+				"SlotText"		"#LoadoutSlot_Weapon"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"		"1150"
+				"MaxPolygonsLOD1"		"550"
+			}
+			"1"
+			{
+				"SlotIndex"		"1"
+				"SlotName"		"head"
+				"SlotText"		"#LoadoutSlot_Head_Accessory"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"		"1000"
+				"MaxPolygonsLOD1"		"500"
+			}
+			"2"
+			{
+				"SlotIndex"		"2"
+				"SlotName"		"back"
+				"SlotText"		"#LoadoutSlot_Back"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"		"1000"
+				"MaxPolygonsLOD1"		"500"
+			}
+			"3"
+			{
+				"SlotIndex"		"3"
+				"SlotName"		"arms"
+				"SlotText"		"#LoadoutSlot_Arms"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"		"650"
+				"MaxPolygonsLOD1"		"450"
+			}
+			"4"
+			{
+				"SlotIndex"		"4"
+				"SlotName"		"misc"
+				"SlotText"		"#LoadoutSlot_Misc"
+				"DisplayInLoadout" "0"
+			}
+			"5"
+			{
+				"SlotIndex"		"5"
+				"SlotName"		"ambient_effects"
+				"SlotText"		"#LoadoutSlot_Ambient_Effects"
+				"DisplayInLoadout"		"0"
+			}
+		}
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"particles/units/heroes/hero_slardar/slardar_loadout.vpcf"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"		"attach_hitloc"
+					}
+				}
+			}
+		}
+		"Bot"
+		{
+			"HeroType"		"DOTA_BOT_TANK | DOTA_BOT_GANKER | DOTA_BOT_STUN_SUPPORT"
+			"LaningInfo"
+			{
+				"SoloDesire"		"1"
+				"RequiresBabysit"		"1"
+				"ProvidesBabysit"		"1"
+				"SurvivalRating"		"2"
+				"RequiresFarm"		"2"
+				"ProvidesSetup"		"2"
+				"RequiresSetup"		"0"
+			}
+		}
+	}
+}

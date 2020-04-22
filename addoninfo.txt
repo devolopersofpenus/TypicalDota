@@ -1,3 +1,8 @@
 "AddonInfo"
 {
+	"TeamCount"		"2"
+	"PenaltiesEnabled"		"0"
+	"CheckAFKPlayers"		"1"
+	"HeroGuidesSupported"		"1"
+	maps	"dota"
 }

@@ -1,0 +1,177 @@
+"DOTAHeroes"
+{
+	"npc_dota_hero_chen"
+	{
+		"Model"		"models/heroes/chen/chen.vmdl"
+		"Portrait"		"vgui/hud/heroportraits/portrait_chen"
+		"SoundSet"		"Hero_Chen"
+		"Enabled"		"1"
+		"HeroUnlockOrder"		"3"
+		"Role"			"Support,Jungler,Pusher"
+		"Rolelevels"	"2,3,2"
+		"Complexity"	"3"
+		"Team"		"Good"
+		"HeroID"		"66"
+		"ModelScale"		"0.930000"
+		"LoadoutScale"		"0.820000"
+		"HeroGlowColor"		"107 74 53"
+		"PickSound"		"chen_chen_spawn_01"
+		"BanSound"		"chen_chen_anger_04"
+		"CMEnabled"		"1"
+		"workshop_guide_name"		"Chen"
+		"LastHitChallengeRival"		"npc_dota_hero_sven"
+		"HeroSelectSoundEffect"		"Hero_Chen.Pick"
+		"GibType"		"default"
+		"Ability1"		"chen_penitence"
+		"Ability2"		"chen_divine_favor"
+		"Ability3"		"chen_holy_persuasion"
+		"Ability4"		"generic_hidden"
+		"Ability5"		"generic_hidden"
+		"Ability6"		"chen_hand_of_god"
+		"Ability10"		"special_bonus_exp_boost_35"
+		"Ability11"		"special_bonus_cast_range_200"
+		"Ability12"		"special_bonus_armor_7"
+		"Ability13"		"special_bonus_unique_chen_3"
+		"Ability14"		"special_bonus_gold_income_30"
+		"Ability15"		"special_bonus_unique_chen_4"
+		"Ability16"		"special_bonus_unique_chen_1"
+		"Ability17"		"special_bonus_unique_chen_2"
+
+		"AbilityDraftAbilities"
+		{
+			"Ability1"		"chen_penitence"
+			"Ability2"		"chen_test_of_faith"
+			"Ability4"		"chen_holy_persuasion"
+			"Ability5"		"chen_hand_of_god"
+		}
+
+		"ArmorPhysical"		"-1"
+		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageMin"		"29"
+		"AttackDamageMax"		"39"
+		"AttackRate"		"1.700000"
+		"AttackAnimationPoint"		"0.500000"
+		"AttackAcquisitionRange"		"800"
+		"AttackRange"		"650"
+		"ProjectileModel"		"particles/units/heroes/hero_chen/chen_base_attack.vpcf"
+		"ProjectileSpeed"		"1100"
+		"AttributePrimary"		"DOTA_ATTRIBUTE_INTELLECT"
+		"AttributeBaseStrength"		"25"
+		"AttributeStrengthGain"		"2.00000"
+		"AttributeBaseAgility"		"15"
+		"AttributeAgilityGain"		"2.100000"
+		"AttributeBaseIntelligence"		"19"
+		"AttributeIntelligenceGain"		"2.800000"
+		"MovementSpeed"		"310"
+		"MovementTurnRate"		"0.600000"
+		"particle_folder"		"particles/units/heroes/hero_chen"
+		"GameSoundsFile"		"soundevents/game_sounds_heroes/game_sounds_chen.vsndevts"
+		"VoiceFile"		"soundevents/voscripts/game_sounds_vo_chen.vsndevts"
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"particles/units/heroes/hero_chen/chen_loadout.vpcf"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"		"attach_hitloc"
+					}
+				}
+			}
+		}
+		"ItemSlots"
+		{
+			"0"
+			{
+				"SlotIndex"		"0"
+				"SlotName"		"weapon"
+				"SlotText"		"#LoadoutSlot_Weapon"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"		"1000"
+				"MaxPolygonsLOD1"		"500"
+			}
+			"1"
+			{
+				"SlotIndex"		"1"
+				"SlotName"		"head"
+				"SlotText"		"#LoadoutSlot_Head_Accessory"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"		"1000"
+				"MaxPolygonsLOD1"		"500"
+			}
+			"2"
+			{
+				"SlotIndex"		"2"
+				"SlotName"		"shoulder"
+				"SlotText"		"#LoadoutSlot_Shoulder"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"		"2000"
+				"MaxPolygonsLOD1"		"1000"
+			}
+			"3"
+			{
+				"SlotIndex"		"3"
+				"SlotName"		"arms"
+				"SlotText"		"#LoadoutSlot_Arms"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"		"800"
+				"MaxPolygonsLOD1"		"600"
+			}
+			"4"
+			{
+				"SlotIndex"		"4"
+				"SlotName"		"mount"
+				"SlotText"		"#LoadoutSlot_Mount"
+				"TextureWidth"		"512"
+				"TextureHeight"		"512"
+				"MaxPolygonsLOD0"		"4000"
+				"MaxPolygonsLOD1"		"2000"
+			}
+			"5"
+			{
+				"SlotIndex"		"5"
+				"SlotName"		"misc"
+				"SlotText"		"#LoadoutSlot_Misc" //slot retired from workshop, only used for 2 items
+			}
+			"6"
+			{
+				"SlotIndex"		"6"
+				"SlotName"		"taunt"
+				"SlotText"		"#LoadoutSlot_Taunt"
+			}
+			"7"
+			{
+				"SlotIndex"		"7"
+				"SlotName"		"ambient_effects"
+				"SlotText"		"#LoadoutSlot_Ambient_Effects"
+				"DisplayInLoadout"		"0"
+			}
+		}
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+			}
+		}
+		"Bot"
+		{
+			"HeroType"		"DOTA_BOT_PURE_SUPPORT"
+			"LaningInfo"
+			{
+				"SoloDesire"		"0"
+				"RequiresBabysit"		"0"
+				"ProvidesBabysit"		"1"
+				"SurvivalRating"		"0"
+				"RequiresFarm"		"1"
+				"ProvidesSetup"		"0"
+				"RequiresSetup"		"0"
+			}
+		}
+	}
+}

@@ -1,0 +1,228 @@
+"DOTAAbilities"
+{
+	"abaddon_death_coil"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"5585"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_BOTH"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ALLIES_YES"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"FightRecapLevel"				"1"
+		"AbilitySound"					"Hero_Abaddon.DeathCoil.Cast"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"800"
+		"AbilityCastPoint"				"0.25"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"4.5"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"self_damage"			"75 100 125 150"
+				"LinkedSpecialBonus"	"special_bonus_unique_abaddon_2"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"target_damage"			"165 220 275 330"
+				"LinkedSpecialBonus"	"special_bonus_unique_abaddon_2"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"heal_amount"					"250 360 470 580"
+				"LinkedSpecialBonus"	"special_bonus_unique_abaddon_2"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"missile_speed"			"1300"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+	}
+
+	
+	"abaddon_aphotic_shield"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"5586"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"	
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ALLIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"FightRecapLevel"				"1"
+		"AbilitySound"					"Hero_Abaddon.AphoticShield.Cast"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"500"
+		"AbilityCastPoint"				"0.4"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"12.0 10.0 8.0 6.0"
+		
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"115"
+
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"15.0"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"damage_absorb"			"140 205 270 335"
+				"LinkedSpecialBonus"	"special_bonus_unique_abaddon"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"675 720 765 810"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
+	}
+
+	
+	"abaddon_frostmourne"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"5587"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		
+	
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"slow_duration"				"5"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"movement_speed"				"15 20 25 30"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"hit_count"				"3"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"curse_duration"				"4"
+			}
+			"05"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"curse_slow"				"30 40 50 60"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"curse_attack_speed"			"40 70 100 130"
+				"LinkedSpecialBonus"			"special_bonus_unique_abaddon_3"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
+	}
+
+	
+	"abaddon_borrowed_time"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"5588"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_PSEUDO_QUEUE"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"FightRecapLevel"				"2"
+		"AbilitySound"					"Hero_Abaddon.BorrowedTime"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
+		"AbilityCastGestureSlot"		"ABSOLUTE"
+
+		"HasScepterUpgrade"			"1"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"60.0 45.0 30.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0 0 0"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"hp_threshold"				"400"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration"					"5.0 6.5 8.0"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration_scepter"			"9.0 10.5 12.0"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"redirect"					"0.95"
+			}
+			"05"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"redirect_pct_tooltip_scepter"					"95"
+			}
+			"06"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"redirect_range_tooltip_scepter"		"1600"
+			}
+		}
+	}
+
+	
+}
