@@ -15,6 +15,10 @@
 #base "heroes/finnick/finnick.txt"
 #base "heroes/finnick/finnick_units.txt"
 
+//necromanicon
+#base "units/necromanicon/warior.txt"
+#base "units/necromanicon/archer.txt"
+
 "DOTAUnits"
 {
 }
