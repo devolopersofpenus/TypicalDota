@@ -628,7 +628,7 @@
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"100"
+		"ItemCost"						"120"
 		"ItemShopTags"					"block"
 		"ItemQuality"					"component"
 		"ItemAliases"					"stout shield"
@@ -643,17 +643,17 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_block_melee"	"20"
+				"damage_block_melee"	"35"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_block_ranged"	"8"
+				"damage_block_ranged"	"14"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"block_chance"			"50"
+				"block_chance"			"60"
 			}
 		}
 	}
@@ -743,7 +743,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"145"
+		"ItemCost"						"155"
 		"ItemShopTags"					"str"
 		"ItemQuality"					"component"
 		"ItemAliases"					"gauntlets of strength"
@@ -756,7 +756,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_strength"		"3"
+				"bonus_strength"		"4"
 			}
 		}
 	}
@@ -773,7 +773,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"145"
+		"ItemCost"						"155"
 		"ItemShopTags"					"agi"
 		"ItemQuality"					"component"
 		"ItemAliases"					"slippers of agility"
@@ -786,7 +786,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_agility"			"3"
+				"bonus_agility"			"4"
 			}
 		}
 	}
@@ -798,7 +798,7 @@
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
-		"ID"							"15"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"ID"							"155"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		
 		// Item Info
@@ -816,7 +816,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_intellect"		"3"
+				"bonus_intellect"		"4"
 			}
 		}
 	}
@@ -841,7 +841,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"50"
+		"ItemCost"						"70"
 		"ItemShopTags"					"agi;int;str"
 		"ItemQuality"					"consumable"
 		"ItemAliases"					"gg branch;iron branch"
@@ -854,7 +854,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_all_stats"		"1"
+				"bonus_all_stats"		"4"
 			}
 			"02"
 			{
@@ -906,7 +906,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"450"
+		"ItemCost"						"500"
 		"ItemShopTags"					"agi"
 		"ItemQuality"					"component"
 		"ItemAliases"					"band of elvenskin"
@@ -919,7 +919,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_agility"			"6"
+				"bonus_agility"			"8"
 			}
 		}
 	}
@@ -1127,7 +1127,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_all_stats"		"10"
+				"bonus_all_stats"		"15"
 			}
 		}
 	}
@@ -1444,7 +1444,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_evasion"			"15"
+				"bonus_evasion"			"20"
 			}
 		}
 	}
@@ -1487,7 +1487,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"health_restore"		"2500"
+				"health_restore"		"2000"
 			}
 			"02"
 			{
@@ -1532,17 +1532,17 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"max_charges"			"10"
+				"max_charges"			"15"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"charge_radius"			"1200"
+				"charge_radius"			"1300"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"restore_per_charge"	"15"
+				"restore_per_charge"	"13"
 			}
 		}
 	}
@@ -1606,12 +1606,12 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"max_charges"			"20"
+				"max_charges"			"25"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"charge_radius"			"1200"
+				"charge_radius"			"1400"
 			}
 			"03"
 			{
@@ -1621,7 +1621,7 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"restore_per_charge"	"15"
+				"restore_per_charge"	"12"
 			}
 		}
 	}
@@ -1663,12 +1663,12 @@
 			"02"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"duration"				"4.0"
+				"duration"				"6.0"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"extra_spell_damage_percent"	"-40"
+				"extra_spell_damage_percent"	"-60"
 			}
 		}
 	}
@@ -1813,7 +1813,7 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"health_regen"			"50"
+				"health_regen"			"70"
 			}
 		}
 	}
@@ -1864,7 +1864,7 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"radius"				"1050"
+				"radius"				"1100"
 			}
 			"03"
 			{
@@ -1897,7 +1897,7 @@
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"625"
+		"ItemCost"						"735"
 		"ItemShopTags"					"consumable"
 		"ItemQuality"					"common"
 		"ItemAliases"					"bottle"
@@ -1922,7 +1922,7 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"mana_restore"			"75"
+				"mana_restore"			"85"
 			}			
 			"03"
 			{
@@ -1932,7 +1932,7 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"max_charges"			"3"
+				"max_charges"			"5"
 			}
 		}
 	}
@@ -1988,7 +1988,7 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"vision_range"			"1400"
+				"vision_range"			"1600"
 			}
 			"03"
 			{
@@ -2209,7 +2209,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"90"
+		"ItemCost"						"100"
 		"ItemShopTags"					"consumable"
 		"ItemQuality"					"consumable"
 		"ItemAliases"					"tango"
@@ -2226,7 +2226,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"health_regen"			"7.0"
+				"health_regen"			"8.0"
 			}
 			"02"
 			{
@@ -2259,7 +2259,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"165"
 		"AbilityCastPoint"				"0.0"
-		"AbilityCooldown"				"60.0"
+		"AbilityCooldown"				"30.0"
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -2281,7 +2281,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"health_regen"			"7.0"
+				"health_regen"			"8.0"
 			}
 			"02"
 			{
@@ -2495,7 +2495,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_movement_speed"	"110"
+				"bonus_movement_speed"	"120"
 			}
 			"02"
 			{
@@ -2547,7 +2547,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_movement_speed"	"130"
+				"bonus_movement_speed"	"140"
 			}
 			"02"
 			{
@@ -2604,7 +2604,7 @@
 		
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"8.0"
+		"AbilityCooldown"				"7.0"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -2762,7 +2762,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_strength"		"25"
+				"bonus_strength"		"30"
 			}
 		}
 	}
@@ -3081,7 +3081,7 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_stat"			"10"
+				"bonus_stat"			"12"
 			}	
 			"03"
 			{
@@ -3163,12 +3163,12 @@
 			"02"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"xp_multiplier"			"1.85"
+				"xp_multiplier"			"1.80"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_gold"			"160"
+				"bonus_gold"			"150"
 			}
 		}
 	}
@@ -3432,17 +3432,17 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_strength"		"6"
+				"bonus_strength"		"7"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_agility"			"3"
+				"bonus_agility"			"1"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_intellect"		"3"
+				"bonus_intellect"		"2"
 			}
 			"04"
 			{
@@ -7837,7 +7837,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_damage"			"330"
+				"bonus_damage"			"666"
 			}
 		}
 	}
@@ -8040,22 +8040,22 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_agility"			"30"
+				"bonus_agility"			"32"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_damage"			"25"
+				"bonus_damage"			"35"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_evasion"			"35"
+				"bonus_evasion"			"40"
 			}
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_attack_speed"	"30"
+				"bonus_attack_speed"	"25"
 			}
 		}
 	}
